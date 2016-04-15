@@ -11,8 +11,6 @@ By the end of this talk, students should understand how to create and use a virt
 * How to host your own web services (or personal website) for free/cheap?
 * Tools for deploying and managing machine images
 * How does all of this use / differ from virtual machines?
-
-* Know what a VPS is.
 * Know how to use a person VPS and an enterprise VPS.
     * Digital Ocean vs. Amazon AWS
 * Have one or two clearly understood use cases.
@@ -36,3 +34,32 @@ This is how we're going to achieve the above goals.
     * They make up 'the cloud'.
     * They use various tools to do this.
     * Docker fixes the "Works on my machine" problem by standardizing the environment in which the programs are run.
+
+
+## Helpful hints
+
+### AWS EC2 Management Console
+https://console.aws.amazon.com/ec2/v2/home?region=us-east-1###Instances:sort=instanceId
+
+### ssh into AWS
+ssh -i "aws/lecture.pem" ubuntu@ec2-52-90-228-204.compute-1.amazonaws.com
+
+### Magic path setting
+export LD_LIBRARY_PATH=/home/ubuntu/torch-distro/install/lib:/home/ubuntu/torch-distro/install/lib:/home/ubuntu/cudnn-6.5-linux-x64-v2-rc2
+
+### Image doesn't install this correctly, so we have to do it again
+luarocks install sys
+
+### SCP file from AWS
+scp -i ./lecture.pem ubuntu@ec2-52-90-228-204.compute-1.amazonaws.com:~/neural-style/rawr.png ./rawr.png
+
+### Card Demo
+http://104.131.102.44:3000/
+
+### Neural Style
+It's different everytime!
+
+### If docker dies
+docker-machine start datadog
+eval (docker-machine env datadog)
+
