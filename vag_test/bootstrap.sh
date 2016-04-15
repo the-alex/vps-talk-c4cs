@@ -14,8 +14,11 @@ apt-get install -y luarocks
 # 2. install -y lua just-in-time compiler 
 apt-get install -y luajit
 
-# 3. install -y torch - a scientific computing framework for luajit
-curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install | bash
+# 3. install torch - a scientific computing framework for luajit
+# in a terminal, run the commands WITHOUT sudo
+git clone https://github.com/torch/distro.git ~/torch --recursive
+cd ~/torch; bash install-deps;
+./install.sh
 
 # 4. protocol buffers - google's data exchange format
 apt-get install -y libprotobuf-dev protobuf-compiler

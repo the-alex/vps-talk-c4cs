@@ -96,6 +96,11 @@ docker run -it ubuntu bash
 * Host personal website/app
 * Rent a more powerful PC
 
+--
+
+.center[_Use your imagination!_]
+.center[![spongebro](https://49.media.tumblr.com/fb00dfdbdcb89a8eb47e96ed4632ae5c/tumblr_o50wufdLRn1v4167qo1_500.gif)]
+
 ???
 
 ### Card Demo

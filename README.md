@@ -1,8 +1,5 @@
 # Virtual Private Servers Talk
 
-## Unknowns
-* How do you set up a VPS hosted website with domain name?
-* Decide interactive vs. slides (or how much to use of both)
 
 ## Goals
 By the end of this talk, students should understand how to create and use a virtual private server, as well as understand how they are used 'in the cloud'.
@@ -51,7 +48,7 @@ export LD_LIBRARY_PATH=/home/ubuntu/torch-distro/install/lib:/home/ubuntu/torch-
 luarocks install sys
 
 ### SCP file from AWS
-scp -i ./lecture.pem ubuntu@ec2-52-90-228-204.compute-1.amazonaws.com:~/neural-style/rawr.png ./rawr.png
+scp -i ./lecture.pem ubuntu@ec2-52-91-173-6.compute-1.amazonaws.com:~/neural-style/dat_neural.png .
 
 ### Card Demo
 http://104.131.102.44:3000/
