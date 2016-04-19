@@ -1,5 +1,7 @@
 # Virtual Private Servers Talk
 
+## Slides
+You can run the slides locally by navigating to `./presentaion` and running the command `python -m SimpleHTTPServer` for python 2 and `python -m http.server` for python 3.
 
 ## Goals
 By the end of this talk, students should understand how to create and use a virtual private server, as well as understand how they are used 'in the cloud'.
@@ -34,6 +36,8 @@ This is how we're going to achieve the above goals.
 
 
 ## Helpful hints
+
+These were just some helpful links for me when I was presenting in case something broke or I forgot a line. It turned out that I didn't need most of them.
 
 ### AWS EC2 Management Console
 https://console.aws.amazon.com/ec2/v2/home?region=us-east-1###Instances:sort=instanceId
