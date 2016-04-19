@@ -9,7 +9,11 @@ _alex chojnacki_
 
 > _"A VPS runs its own copy of an operating system, and customers have superuser-level access to that operating system instance, so they can install almost any software that runs on that OS. For many purposes they are functionally equivalent to a dedicated physical server, and being software-defined, are able to be much more easily created and configured." -- Wikipedia_
 
+
+
+
 ???
+Aside from "customer", it sounds the same as our normal VM.
 
 1. How is a VPS similar to our VirtualBox images from this description?
 1. Are there any advantages we can think of?
@@ -24,13 +28,9 @@ Different
 - Create and destroy instances as they are needed
 - There's no GUI!
 
-
 --
 
-# So what's all the fuss about?
-
-### Focus on the advantages we just talked about.
-
+# Advantages
 * They are easily configurable ...
 * We can make as many as we want ...
 * We can make them as powerful as we need ...
@@ -44,7 +44,7 @@ class: center, middle
 ---
 class: center, middle
 
-# What tools are used for Virtual Private Servers?
+# How do I make one?
 
 ---
 
@@ -106,5 +106,6 @@ docker run -it ubuntu bash
 ### Card Demo
 http://104.131.102.44:3000/
 
-### Neural Style
-Fill in!
+## Why would I ever use AWS / For power
+http://arxiv.org/pdf/1508.06576v2.pdf
+https://github.com/jcjohnson/neural-style

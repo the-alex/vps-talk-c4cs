@@ -1,7 +1,3 @@
-
-echo "Testing the file"
-
-
 # you'll need git
 apt-get install -y git
 
