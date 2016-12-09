@@ -5,6 +5,31 @@ _alex chojnacki_
 
 ---
 
+# The history of computing in a nutshell
+
+1. Began with dumb terminals attached to smart mainframes
+
+--
+
+1. Moved to stronger individual computers, "PC's"
+
+--
+
+1. Back to dumb devices connected to supercomputers.
+  * _What can you even do on
+   a phone with no internet connection?_  
+
+
+---
+
+# What is a VPS?
+
+--
+
+_Okay, yeah, it's a "virtual private server" ..._
+
+---
+
 # What does Wikipedia say about it?
 
 > _"A VPS runs its own copy of an operating system, and customers have superuser-level access to that operating system instance, so they can install almost any software that runs on that OS. For many purposes they are functionally equivalent to a dedicated physical server, and being software-defined, are able to be much more easily created and configured." -- Wikipedia_
@@ -26,7 +51,7 @@ Different
 - Easily (automajically) configurable
 - We can pay $$$ to get better resources
 - Create and destroy instances as they are needed
-- There's no GUI!
+- There's no GUI _(usually)!_
 
 --
 
@@ -79,7 +104,6 @@ What if I want to make 50 VMs at once and they all need the same config?
 docker run -it ubuntu bash
 ```
 
-
 --
 
 ## AWS, Linode, DigitalOcean, etc.
@@ -94,11 +118,16 @@ docker run -it ubuntu bash
 --
 
 * Host personal website/app
-* Rent a more powerful PC
+* "Rent" a more powerful PC
+* Host chatbots like GitHub's `hubot`
 
 --
 
 .center[_Use your imagination!_]
+
+<br/>
+<br/>
+<br/>
 .center[![spongebro](https://49.media.tumblr.com/fb00dfdbdcb89a8eb47e96ed4632ae5c/tumblr_o50wufdLRn1v4167qo1_500.gif)]
 
 ???

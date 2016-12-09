@@ -15,11 +15,20 @@ By the end of this talk, students should understand how to create and use a virt
 * Have one or two clearly understood use cases.
     * File Storage (Movies / HD Music)
     * Hosting a personal web site or project.
-* VirtualBox vs. Docker vs. Vagrant
+* VirtualBox vs. Vagrant
 
 ## Lesson Plan
 This is how we're going to achieve the above goals.
 
+1. A little history
+    * Matt's lecture taught us that the internet is composed of a set of
+      protocols that exchange text and binary data over dumb cables.
+    * Abstraction is a powerful thing. As long as each layer is clear about
+      what it is responsible for, you can build on top of it.
+    * The internet started as a way for physicists to share papers.
+    * Dumb terminals hard connected to super computers, then to big computers,
+      and again to dumb terminals, this time wirelessly connected to
+supercomputers.  
 1. What is a virtual private server (VPS)?
     * "A VPS runs its own copy of an operating system, and customers have superuser-level access to that operating system instance, so they can install almost any software that runs on that OS. For many purposes they are functionally equivalent to a dedicated physical server, and being software-defined, are able to be much more easily created and configured." -- Wikipedia
     * It's a computer in the great cloud above.
@@ -33,7 +42,6 @@ This is how we're going to achieve the above goals.
     * They make up 'the cloud'.
     * They use various tools to do this.
     * Docker fixes the "Works on my machine" problem by standardizing the environment in which the programs are run.
-
 
 ## Helpful hints
 
@@ -64,3 +72,5 @@ It's different everytime!
 docker-machine start datadog
 eval (docker-machine env datadog)
 
+### Neural-Style gist
+https://gist.github.com/elad/e3a9e3cc609996b13454

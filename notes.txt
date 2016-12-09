@@ -1,0 +1,18 @@
+New brief rundown
+
+1. History of computing in a nutshell
+1. What is a VPS?
+1. Who uses them?
+1. What can I do with them?
+1. Demos
+  * Old flash card project
+  * Neural Style
+  * Kill a VM
+  * GitHub Pages
+1. Grab bag of fun stuff 
+  * Different shells
+  * `tmux` / `screen` / `byobu`
+1. A bit about this class
+  * What did you think?
+  * What was/wasn't useful?
+1. Parting thoughts.
