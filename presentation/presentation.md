@@ -17,7 +17,7 @@ _alex chojnacki_
 
 1. Back to dumb devices connected to supercomputers.
   * _What can you even do on
-   a phone with no internet connection?_  
+   a phone with no internet connection?_
 
 
 ---
@@ -78,6 +78,7 @@ class: center, middle
 * A "headless" VM
 * Provisioning support built-in
 * Often times more convenient without the GUI
+* Provisioning mechanism
 
 ```bash
 thealex :: $ vagrant init hashicorp/precise64
@@ -87,9 +88,9 @@ thealex :: $ vagrant up
 thealex :: $ vagrant ssh
 ```
 
-???
-_Why is provisioning cool?_
-What if I want to make 50 VMs at once and they all need the same config?
+--
+
+_Why is provisioning cool?_ **::** What if I want to make 50 VMs at once and they all need the same config?
 
 ---
 
@@ -118,23 +119,124 @@ docker run -it ubuntu bash
 --
 
 * Host personal website/app
-* "Rent" a more powerful PC
+* Temporarily "rent" a more powerful PC
 * Host chatbots like GitHub's `hubot`
 
 --
 
 .center[_Use your imagination!_]
 
-<br/>
-<br/>
-<br/>
-.center[![spongebro](https://49.media.tumblr.com/fb00dfdbdcb89a8eb47e96ed4632ae5c/tumblr_o50wufdLRn1v4167qo1_500.gif)]
+---
 
-???
+## Why would I ever use AWS for compute power?
 
-### Card Demo
+--
+
+### I hear neural networks are all the rage ...
+
+http://arxiv.org/pdf/1508.06576v2.pdf
+
+https://github.com/jcjohnson/neural-style
+
+---
+
+# Installing dependencies
+
+```bash
+luarocks install sys
+luarocks install image
+luarocks install loadcaffe
+luarocks install torch
+export LD_LIBRARY_PATH=/home/ubuntu/torch-distro/install/lib:/home/ubuntu/torch-distro/install/lib:/home/ubuntu/cudnn-6.5-linux-x64-v2-rc2
+
+# clone the project and install
+git clone https://github.com/jcjohnson/neural-style
+cd neural-style
+sh models/download_models.sh
+```
+
+--
+
+- What is `luarocks`?
+- What is `export LD_LIBRARY_PATH` doing?
+- What about the sh command?
+
+---
+
+# How do we get my image onto the server?
+
+- email it to myself?
+- Click and drag to the ... just stop -- no.
+
+--
+
+- `scp`!
+
+`scp -i ~/Downloads/c4cs-neural-style.pem ubuntu@ec2-52-70-134-147.compute-1.amazonaws.com:neural-style/output.png .`
+
+- maybe even a python webserver ... `http://52.70.134.147`
+---
+
+# Card Demo
+
+--
+
+## Problem
+
+- Wrote a bunch of notes with `word::definition` pairs
+
+- Wanted a flash card app on my phone
+
+--
+
+## Solution
+
+- Simple project using node.js, mongo, express.js
+
+- Written in an afternoon
+
+--
+
+- ... or two.
+
+--
+
 http://104.131.102.44:3000/
 
-## Why would I ever use AWS / For power
-http://arxiv.org/pdf/1508.06576v2.pdf
-https://github.com/jcjohnson/neural-style
+
+---
+
+# A few notes about the class
+
+From the first slide of the course ...
+
+```
+## What this class is about
+- This is not "Tools for Computer Scientists"
+
+- Though, we will cover a lot of cool tools
+
+- The goal is to give you the ability to pick up, learn, and use tools effectively
+```
+
+_Hopefully ..._
+
+- ... you've followed a guide and needed to improvise.
+
+--
+
+- ... you've learned a tool or two that surprised you.
+
+--
+
+- ... you're more confident approaching new problems.
+
+--
+
+.center[__You know more than you think you know,__]
+.center[__and nothing on a command line is hard ... __]
+
+--
+
+.center[__ ... the second time ...  __]
+
